@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="projetocss.css">
+    <title>Luan Souza</title>
+    
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/media/luan/Arquivos/Hiring Codes/CSS/projetoCSS/img/logo.png" alt="Logo Luan Souza" width="150" height="100">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/gitluanhub">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:luan.aluno25@gmail.com">email</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/61994536087">whatsapp</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Luan Souza</h1>
+                <h5>Front-End Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-angle-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet assumenda fugit sapiente mollitia consectetur debitis quaerat, ipsum dicta. Rem repellat repudiandae natus. Aliquid, facilis voluptatem vel praesentium eveniet iste tempora eaque nemo sunt? Ullam est accusantium quibusdam. Vitae, porro. Nam?
+                </p>
+            </div>
+        
+            <div class="form">
+                <div>
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
